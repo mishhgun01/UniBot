@@ -126,7 +126,7 @@ def main():
     def exit(msg):
         if msg.text.strip()=='Нет, спасибо!':
             bot.send_message(msg.chat.id, 'Хорошо, увидимся!')
-
+            start()
         elif msg.text.strip()=='В начало':
             msg = "start"
             bot.register_next_step_handler(msg, start)
